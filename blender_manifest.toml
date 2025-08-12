@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+id = "markcam"
+version = "1.0.6"
+name = "MarkCam"
+tagline = "Quick camera-from-view + timeline marker tools"
+type = "add-on"
+maintainer = "Som Render"
+blender_version_min = "4.5.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+website = "https://somrender.gumroad.com/l/ddcyp"
+documentation = "https://github.com/Somrender/MarkCam#readme"
+issue_tracker = "https://github.com/Somrender/MarkCam/issues"
+source_code = "https://github.com/Somrender/MarkCam"
