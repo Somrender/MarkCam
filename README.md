@@ -13,12 +13,11 @@
 
 ---
 
-## Installation
-1. **Download the `.zip` file** for MarkCam (https://somrender.gumroad.com/l/ddcyp).  
-2. In Blender, go to:  
-   `Edit → Preferences → Add-ons → Install`  
-3. Select the `.zip` file and click **Install Add-on**.  
-4. Enable **MarkCam** in the add-ons list.
+## Installation  
+You can download MarkCam in three ways:  
+1. From **Gumroad** (https://somrender.gumroad.com/l/ddcyp)  
+2. From the **Blender Extensions** platform  
+3. From **Blender Preferences → Extensions** by searching for "MarkCam"  
 
 💡 *You can also drag and drop the `.zip` file directly into the Blender window to install.*
 
