@@ -1,7 +1,7 @@
 bl_info = {
     "name": "MarkCam",
     "author": "Som Render",
-    "version": (1, 0, 7),
+    "version": (1, 1, 2),
     "blender": (4, 5, 0),
     "location": "Dope Sheet (Timeline) Header",
     "description": "Create camera from view (Shift/Ctrl), bind camera to current-frame marker, remove markers (Ctrl+X removes ALL with confirm).",
