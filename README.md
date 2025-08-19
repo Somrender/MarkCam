@@ -1,30 +1,38 @@
 # MarkCam — Camera & Marker Tools for Blender
 
-**MarkCam** adds two quick-action buttons to the Timeline header (Dope Sheet → Timeline) for easier camera and marker control.
+**MarkCam** adds two quick-action buttons to the Timeline header (Dope Sheet → `Timeline`) and a compact **Camera Ranges** panel for easier camera + marker control.
 
 ---
 
-## Features
-- **Click** 📸 Bind active camera to a marker at current frame  
-- **Shift + Click** 📸 Create a camera from your current 3D view  
-- **Ctrl + Click** 📸 Create camera from view **and** bind marker  
-- **Click X** ❌ Remove marker(s) at current frame  
-- **Ctrl + Click X** ❌ Remove **ALL** markers (with confirmation)
+## ✨ Features
+
+- **Click** 🎥 Bind **active camera** to a marker at the **current frame**  
+- **Shift + Click** 🎥 Create a **new camera** from your **current 3D view** (no marker)  
+- **Ctrl + Click** 🎥 Create a **new camera** from view **and** bind a marker at the current frame  
+- **Click X** ❌ Remove **marker(s)** at the current frame (never deletes cameras)  
+- **Ctrl + Click X** ❌ Remove **ALL** markers **(with confirmation)**
+
+**Camera Ranges (N-panel, Timeline):**
+- One row **per camera-bound marker** (you can reuse the **same camera** multiple times)
+- **Camera** (inline rename) · **Start** (editable; live moves the marker) · **End** (auto to the next start or scene end) · **Select/Jump** (selects the camera and moves the playhead)  
+- **Refresh** 🔁 Sorts by start and resolves overlaps
 
 ---
 
-## Installation  
-You can download MarkCam in three ways:  
-1. From **Gumroad** (https://somrender.gumroad.com/l/ddcyp)  
-2. From the **Blender Extensions** platform  
-3. From **Blender Preferences → Extensions** by searching for "MarkCam"  
+## 🧭 Where it works
+- Only in **Dope Sheet → Timeline** mode  
+- Designed for speed: **click / Shift-click / Ctrl-click** — no menus
 
-💡 *You can also drag and drop the `.zip` file directly into the Blender window to install.*
+---
+
+## 📦 Installation
+- From Blender: **Edit → Preferences → Extensions**, search **“MarkCam”** and install  
+- **Drag & drop** the `.zip` into the Blender window  
+- Or: **Edit → Preferences → Add-ons → Install**, pick the `.zip`
 
 ---
 
 **Requires:** Blender 4.5+  
-*Works only in* **Timeline mode** *of the Dope Sheet.*
 
-**Support the project:** [https://somrender.gumroad.com/l/ddcyp]
-**Bugs / requests:** [https://github.com/Somrender/MarkCam/issues]
+**Support the project:** https://somrender.gumroad.com/l/ddcyp  
+**Bugs / requests:** https://github.com/Somrender/MarkCam/issues
