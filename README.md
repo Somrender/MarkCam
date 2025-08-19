@@ -34,5 +34,5 @@
 
 **Requires:** Blender 4.5+  
 
-**Support the project:** https://somrender.gumroad.com/l/ddcyp  
+**Support the project:** https://somrender.gumroad.com/l/Markcam
 **Bugs / requests:** https://github.com/Somrender/MarkCam/issues
