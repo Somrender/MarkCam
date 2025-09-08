@@ -402,8 +402,16 @@ def register():
     bpy.types.Scene.markcam_updating = BoolProperty(default=False, options={'HIDDEN'})
     global _menu_targets
     _menu_targets = _try_hook_editor_menus()
-    for scn in bpy.data.scenes:
-        sync_entries_from_scene(scn, cleanup=False)
+    # Defer syncing until Blender is fully loaded to avoid AttributeError
+    def _sync_all_scenes(dummy=None):
+        for scn in bpy.data.scenes:
+            sync_entries_from_scene(scn, cleanup=False)
+        return None
+    # Remove any previous handler to avoid duplicates
+    for h in list(bpy.app.handlers.load_post):
+        if getattr(h, "__name__", "") == "_sync_all_scenes":
+            bpy.app.handlers.load_post.remove(h)
+    bpy.app.handlers.load_post.append(_sync_all_scenes)
 
 def unregister():
     _unhook_editor_menus()
